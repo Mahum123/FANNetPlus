@@ -1,0 +1,8 @@
+set msat_dump_frac_as_float 1
+
+reset
+read_model -i network.smv
+go_msat
+
+msat_check_ltlspec_bmc -k 2
+quit
