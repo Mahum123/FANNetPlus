@@ -35,7 +35,7 @@ for i in [2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40]: #range(19,20
 temp = []
 for i in range(0,len(array_of_all_counterexamples)):
     for j in range(0,len(array_of_all_counterexamples[i][1:])):
-        if len(array_of_all_counterexamples[i][j].split(" & ")) == 4:
+        if len(array_of_all_counterexamples[i][j].split(" & ")) == 5:
             temp.append(array_of_all_counterexamples[i][j].split(" & "))
 
 arrayOfCounterexamples = temp #because size of temp and arrayOfCounterexamples are same
