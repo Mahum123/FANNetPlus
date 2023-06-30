@@ -16,3 +16,36 @@ The following requirements correspond to CentOS Linux release 7.9.2009
 - nuXmv (tested with version 1.1.1)
   
 (*Note that: the nuXvm executable must be available to \*/basis/ and named nuXmv_linux64*)
+
+## Usage
+For analysis of DNNs trained on Leukemia or heart disease dataset, execute:
+```
+chmod +x FANNetPlus.sh 
+./FANNetPlus.sh
+```
+***Result:*** 
+The results, i.e., the misclassifying noise vectors (if exist), will be contained in `./Noise.csv`
+
+
+For analysis of ACAS_Xu DNNs, execute:
+```
+chmod +x FANNetPlus_*.sh 
+./FANNetPlus_*.sh
+```
+(*\*: coarse or ris, for coarse-grain or random input segmentation based safety analysis, respectively*)
+
+***Result:*** 
+The results, including execution timings, will be summarized in text files in the directory `./Logs/`
+
+
+Sample results from the experiments provided in `./Sample_results`
+
+## Citing the Work
+Please refer to or cite the following publication:
+M. Naseer, O. Hasan, M. Shafique, “Scaling Model Checking for DNN Analysis via State-Space Reduction and Input Segmentation”, FoMLAS 2023.
+
+For details, refer to:
+M. Naseer, O. Hasan, M. Shafique, “Scaling Model Checking for DNN Analysis via State-Space Reduction and Input Segmentation (Extended Version)”, arXiv 2023.
+
+## License:
+[MIT License](https://opensource.org/licenses/MIT)
